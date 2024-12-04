@@ -1,0 +1,119 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  height: 80vh;
+  overflow: scroll;
+}
+
+
+#input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+#addBtn {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#addBtn:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: scale(1.1);
+}
+
+.todo-list {
+  margin-top: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 6px 12px;
+  margin-left: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+button:last-child {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+}
+
+button:last-child:hover {
+  background: linear-gradient(135deg, #c82333, #bd2130);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
